@@ -26,7 +26,7 @@ public class ChatRoomServer {
 				    System.out.println("Client address is null.");
 				}
 
-				Socket clientSocket = new serverSocket.accept();
+				Socket clientSocket =  serverSocket.accept();
 				System.out.println("New client connected: " + clientSocket.getInetAddress().getHostAddress());
 				
 				ClientHandlerChatRoom clientHandler = new ClientHandlerChatRoom(clientSocket, System.currentTimeMillis()+"", this);
